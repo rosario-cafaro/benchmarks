@@ -4,6 +4,8 @@
 
 ```cs
 csc /out:Hello.exe cs.cs
+csc /o /out:Hello.exe cs.cs
+csc /optimize /out:Hello.exe cs.cs
 mono Hello.exe
 ```
 
