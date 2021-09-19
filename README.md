@@ -1,6 +1,6 @@
 # benchmarks
 
-## C
+## C\#
 
 ```cs
 csc /out:Hello.exe cs.cs
@@ -17,4 +17,11 @@ csc /help
 go run go.go
 go build go.go
 ./go
+```
+
+## Rust
+
+```rust
+rustc rust.rs
+./rust
 ```
