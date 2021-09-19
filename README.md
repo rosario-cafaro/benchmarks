@@ -25,3 +25,10 @@ go build go.go
 rustc rust.rs
 ./rust
 ```
+
+## Python
+
+```python
+python python.py
+python3 python.py
+```
