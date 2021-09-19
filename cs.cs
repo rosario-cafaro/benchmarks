@@ -6,7 +6,7 @@ namespace HelloWorld
     static void Main()
     {
  
-    Console.WriteLine("Hello World!");
+    Console.WriteLine("Hello, World!");
     // Console.WriteLine("Premi un tasto per terminare il programma");
     // Console.ReadKey();
     }
