@@ -11,6 +11,14 @@ e.g. <https://jsonplaceholder.typicode.com/users>, <https://reqres.in/api/users>
 2) call a method on each field
 3) save/return the new object
 
+## C
+
+```c
+gcc -Wall c.c -o hello // The option -Wall turns on all the most commonly-used compiler warnings
+
+./hello
+```
+
 ## C\#
 
 ```cs
