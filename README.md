@@ -19,6 +19,14 @@ gcc -Wall c.c -o hello // The option -Wall turns on all the most commonly-used c
 ./hello
 ```
 
+## C++
+
+```cpp
+g++ -o hello cpp.cpp
+
+./hello
+```
+
 ## C\#
 
 ```cs
