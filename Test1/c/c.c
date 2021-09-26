@@ -1,30 +1,43 @@
 #include <stdio.h>
-void quicksort(int number[10000], int first, int last)
+/* This function takes last element as pivot, places 
+the pivot element at its correct position in sorted 
+array, and places all smaller (smaller than pivot) 
+to left of pivot and all greater elements to right 
+of pivot */
+int partition(int arr[], int low, int high)
 {
-    int i, j, pivot, temp;
-    if (first < last)
+    int pivot = arr[high]; // pivot
+    int i = (low - 1);     // Index of smaller element and indicates the right position of pivot found so far
+
+    for (int j = low; j <= high - 1; j++)
     {
-        pivot = first;
-        i = first;
-        j = last;
-        while (i < j)
+        // If current element is smaller than the pivot
+        if (arr[j] < pivot)
         {
-            while (number[i] <= number[pivot] && i < last)
-                i++;
-            while (number[j] > number[pivot])
-                j--;
-            if (i < j)
-            {
-                temp = number[i];
-                number[i] = number[j];
-                number[j] = temp;
-            }
+            i++; // increment index of smaller element
+            swap(&arr[i], &arr[j]);
         }
-        temp = number[pivot];
-        number[pivot] = number[j];
-        number[j] = temp;
-        quicksort(number, first, j - 1);
-        quicksort(number, j + 1, last);
+    }
+    swap(&arr[i + 1], &arr[high]);
+    return (i + 1);
+}
+
+/* The main function that implements QuickSort 
+arr[] --> Array to be sorted, 
+low --> Starting index, 
+high --> Ending index */
+void quickSort(int arr[], int low, int high)
+{
+    if (low < high)
+    {
+        /* pi is partitioning index, arr[p] is now 
+        at right place */
+        int pi = partition(arr, low, high);
+
+        // Separately sort elements before
+        // partition and after partition
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
     }
 }
 
@@ -54,7 +67,7 @@ int main()
     }
 
     // Sort the array
-    quicksort(integers, 0, 10000 - 1);
+    quickSort(integers, 0, 10000 - 1);
 
     // Print the resulting array and save the integers into another file
     // for (int y = 0; y < 10000; y++)
