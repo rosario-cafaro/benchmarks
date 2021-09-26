@@ -1,6 +1,7 @@
 # Custom files
 *.exe
 *.class
+*.DS_Store
 
 ### JetBrains+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
