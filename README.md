@@ -1,10 +1,11 @@
 # benchmarks
 
-Test 1
+* Test 1
 
-Order an array of 10k elements
+Read 10k integers (1 per row) from a file
+Sort them with the quicksort algorithm
 
-Test 2
+* Test 2
 
 1) call an endpoint to get some data
 e.g. <https://jsonplaceholder.typicode.com/users>, <https://reqres.in/api/users>
