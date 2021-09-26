@@ -2,8 +2,8 @@
 
 * Test 1
 
-Read 10k integers (1 per row) from a file
-Sort them with the quicksort algorithm
+1) Read 10k integers (1 per row) from a file
+2) Sort them with the quicksort algorithm
 
 * Test 2
 
