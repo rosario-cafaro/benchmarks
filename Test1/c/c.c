@@ -37,7 +37,7 @@ int main()
     FILE *fptr;
 
     // Opens the existing file for reading.
-    fptr = fopen("../data/10k_integers.txt", "r");
+    fptr = fopen("../../data/10k_integers.txt", "r");
     if (fptr == NULL)
     {
         printf("10k_integers.txt file not found \n");
