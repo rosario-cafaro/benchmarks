@@ -1,4 +1,10 @@
 #include <stdio.h>
+void swap(int *a, int *b)
+{
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
 /* This function takes last element as pivot, places 
 the pivot element at its correct position in sorted 
 array, and places all smaller (smaller than pivot) 
