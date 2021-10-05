@@ -8,7 +8,7 @@ import (
 	"strconv"
 )
 
-func partition(arr [10000]int, low, high int) ([10000]int, int) {
+func partition(arr [10000]int, low int, high int) ([10000]int, int) {
 	pivot := arr[high]
 	i := low
 	for j := low; j < high; j++ {
@@ -20,7 +20,7 @@ func partition(arr [10000]int, low, high int) ([10000]int, int) {
 	arr[i], arr[high] = arr[high], arr[i]
 	return arr, i
 }
-func quickSort(arr [10000]int, low, high int) [10000]int {
+func quickSort(arr [10000]int, low int, high int) [10000]int {
 	if low < high {
 		var p int
 		arr, p = partition(arr, low, high)
